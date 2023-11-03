@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // build via `vite build --minify=false --watch=true`  (or without --watch if you don't want to rebuild on every change)
+            // note: logseq needs to reload after changes (press ctrl-r in logseq)
+            // launch logseq via `.\Logseq.exe --remote-debugging-port=9229` to get it to listen for the debugger
+            // note: you have to run this from the Logseq directory, not from the project directory
+            // run this debug config in vscode
+            "name": "Attach to Logseq", 
+            "type": "chrome",
+            "request": "attach",
+            "port": 9229,
+            "webRoot": "${workspaceFolder}/dist",
+            "timeout": 10000,
+        }
+    ]
+}
