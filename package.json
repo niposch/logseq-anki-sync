@@ -9,7 +9,7 @@
   "author": "@debanjandhar12",
   "scripts": {
     "dev": "vite",
-    "build": "export NODE_OPTIONS=--max_old_space_size=4096 && vite build",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 && vite build",
     "preinstall": "npx only-allow yarn",
     "test": "vitest"
   },
@@ -26,6 +26,7 @@
     "cheerio": "1.0.0-rc.12",
     "dependency-graph": "^0.11.0",
     "fabric": "5.2.4",
+    "hash-it": "^6.0.0",
     "hash-sum": "2.0.0",
     "highlight.js": "11.7.0",
     "lodash": "^4.17.21",
@@ -34,9 +35,8 @@
     "ohm-js": "^16.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "string-replace-async": "^3.0.2",
-    "hash-it": "^6.0.0",
-    "sass": "^1.68.0"
+    "sass": "^1.68.0",
+    "string-replace-async": "^3.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -54,6 +54,7 @@
     "assert": "^2.0.0",
     "buffer": "^6.0.3",
     "constants-browserify": "^1.0.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-typescript": "^3.5.5",
